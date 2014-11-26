@@ -1,0 +1,63 @@
+doctype
+html
+  head
+    title About me
+    meta(charset='UTF-8')
+    - var csshref = pkg.name + '-' + pkg.version + '.css'
+    link(rel='stylesheet', href='#{csshref}')
+  body
+    .wrapper
+      .header
+        h1 About Junjie
+        p
+          | My name is Junjie Li. I love playing
+          strong basketball
+          | .
+      .study
+        h3  My classes studying in SYSU
+        ul
+          li Data Structure
+          li Web2.0
+          li Digital Fundamentals
+          li Probability and Statistics for Engineering and the Sciences
+      .movie
+        h3 My Favorate Movies
+        ol
+          li
+            | Inception(
+            a(href='http://www.imdb.com/title/tt1375666/?ref_=fn_al_tt_1', target='blank') IMDB
+            | )
+            div
+              dl
+                dt Director
+                dd Christopher Johnathan James Nolan
+                dt Genre
+                dd Action/Mystery/Sci-Fi
+                dt Tagline
+                dd The dream is real.
+                dt Plot Outline
+                dd
+                  | Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.
+          li
+            | Transformers(
+            a(href='http://www.imdb.com/title/tt0418279/?ref_=fn_al_tt_1', target='blank') IMDB
+            | )
+          li
+            | The Shawshank Redemption(
+            a(href='http://www.imdb.com/title/tt0111161/?ref_=fn_al_tt_1', target='blank') IMDB
+            | )
+      .mood
+        h3 My moods
+        - var happyhref = 'assets/images/happy.jpg'
+        - var sadhref = 'assets/images/sad.jpg'
+        | Happy:
+        img(src='#{happyhref}', alt='hahaha~')
+        | Sad:
+        img(src='#{sadhref}', alt='555555~')
+      .friend
+        h3 My Best Friends
+        ul
+          li Zuxing Li: He loves playing computer games very much.
+          li
+            | Yuyuan Liang: He is glad that the OS of his mobile phone is upgrade to windoes phone 8.1.
+
