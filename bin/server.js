@@ -4,7 +4,7 @@
   http = require('http');
   path = require('path');
   app = express();
-  app.get('/api/random', function(req, res){
+  app.get('/', function(req, res){
     res.render('index.html');
   });
   exports = module.exports = app;

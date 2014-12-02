@@ -1,56 +1,95 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About me</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>MyNotes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="MyNotes-0.0.1.css">
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1>About Junjie</h1>
-        <p>My name is Junjie Li. I love playing<strong>basketball</strong>.</p>
+    <div class="header">
+      <div class="mynotes">
+        <p>MyNotes</p>
       </div>
-      <div class="study">
-        <h3> My classes studying in SYSU</h3>
+      <div class="search">
+        <form name="f" action="/search" method="post">
+          <input type="text" name="kw" value="What do you want?">
+          <input type="submit" name="submit" value="search">
+        </form>
+      </div>
+      <div class="login-and-sign">
         <ul>
-          <li>Data Structure</li>
-          <li>Web2.0</li>
-          <li>Digital Fundamentals</li>
-          <li>Probability and Statistics for Engineering and the Sciences</li>
-        </ul>
-      </div>
-      <div class="movie">
-        <h3>My Favorate Movies</h3>
-        <ol>
-          <li>Inception(<a href="http://www.imdb.com/title/tt1375666/?ref_=fn_al_tt_1" target="blank">IMDB</a>)
-            <div>
-              <dl>
-                <dt>Director</dt>
-                <dd>Christopher Johnathan James Nolan</dd>
-                <dt>Genre</dt>
-                <dd>Action/Mystery/Sci-Fi</dd>
-                <dt>Tagline</dt>
-                <dd>The dream is real.</dd>
-                <dt>Plot Outline</dt>
-                <dd>Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</dd>
-              </dl>
-            </div>
+          <li>
+            <button>login</button>
           </li>
-          <li>Transformers(<a href="http://www.imdb.com/title/tt0418279/?ref_=fn_al_tt_1" target="blank">IMDB</a>)</li>
-          <li>The Shawshank Redemption(<a href="http://www.imdb.com/title/tt0111161/?ref_=fn_al_tt_1" target="blank">IMDB</a>)</li>
-        </ol>
-      </div>
-      <div class="mood">
-        <h3>My moods</h3>Happy:<img src="assets/images/happy.jpg" alt="hahaha~">Sad:<img src="assets/images/sad.jpg" alt="555555~">
-      </div>
-      <div class="friend">
-        <h3>My Best Friends</h3>
-        <ul>
-          <li>Zuxing Li: He loves playing computer games very much.</li>
-          <li>Yuyuan Liang: He is glad that the OS of his mobile phone is upgrade to windoes phone 8.1.</li>
+          <li>
+            <button>sign up</button>
+          </li>
         </ul>
       </div>
     </div>
+    <div class="main-wrapper">
+      <div class="navigation">
+        <div class="user">
+          <div class="user-photo"></div>
+          <div class="user-info">
+            <ul>
+              <li id="user-name">name</li>
+              <li id="user-type">type</li>
+              <li id="user-mood">mood</li>
+            </ul>
+          </div>
+        </div>
+        <div class="privilege">
+          <ul>
+            <li>
+              <button>privilege1</button>
+            </li>
+            <li>
+              <button>privilege2</button>
+            </li>
+            <li>
+              <button>privilege3</button>
+            </li>
+            <li>
+              <button>privilege4</button>
+            </li>
+            <li>
+              <button>privilege5</button>
+            </li>
+            <li>
+              <button>privilege6</button>
+            </li>
+            <li>
+              <button>privilege7</button>
+            </li>
+            <li>
+              <button>..........</button>
+            </li>
+            <li>
+              <button>..........</button>
+            </li>
+            <li>
+              <button>..........</button>
+            </li>
+            <li>
+              <button>..........</button>
+            </li>
+            <li>
+              <button>..........</button>
+            </li>
+            <li>
+              <button>..........</button>
+            </li>
+            <li>
+              <button>..........</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content"></div>
+    </div>
+    <div class="footer"></div>
   </body>
 </html>

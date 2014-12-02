@@ -4,7 +4,7 @@ module.exports = (grunt) ->
   pkg = grunt.file.readJSON("package.json")
   DEBUG = false # 添加测试所需代码，发布时应该为false
 
-  grunt.initConfig 
+  grunt.initConfig
     pkg: pkg
     meta:
       banner: "/**\n" + " * <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today(\"yyyy-mm-dd\") %>\n" + " * <%= pkg.homepage %>\n" + " *\n" + " * Copyright (c) <%= grunt.template.today(\"yyyy\") %> <%= pkg.author %>\n" + " * Licensed <%= pkg.licenses.type %> <<%= pkg.licenses.url %>>\n" + " */\n"
@@ -26,7 +26,7 @@ module.exports = (grunt) ->
         push: true
         pushTo: "origin"
 
-    clean: 
+    clean:
       all:
         dot: true
         files:
@@ -55,7 +55,7 @@ module.exports = (grunt) ->
     jade:
       options:
         pretty: true
-        data: 
+        data:
           debug: DEBUG
           pkg: pkg
 
@@ -108,7 +108,7 @@ module.exports = (grunt) ->
     #     options:
     #       exclude: []
     #       # baseUrl: ' bin/'
-    #       transitive: true    
+    #       transitive: true
 
     express:
       dev:
@@ -127,22 +127,8 @@ module.exports = (grunt) ->
         files: ["src/**/*.jade", "tests/**/*.jade"]
         tasks: ["jade"]
 
-      livescriptclient:
-        files: ["src/**/*.ls", "!src/at-plus-page/index.ls"]
-        tasks: ["newer:livescript:client"]
-
-      livescriptindex:
-        files: ["src/at-plus-page/index.ls"]
-        tasks: ["livescript:index"]
-
-      livescriptserver:
-        files: ["server/**/*.ls"]
-        tasks: ["newer:livescript:server", "express-restart"]
-        options:
-          livereload: false
-
-      sass_src:
-        files: ["src/**/*.sass"]
+      scss_src:
+        files: ["src/**/*.scss"]
         tasks: [
           "sass:build"
           "concat:build_css"
@@ -166,7 +152,7 @@ module.exports = (grunt) ->
         options:
           livereload: 8001
 
- 
+
   grunt.renameTask "watch", "delta"
 
   grunt.registerTask "watch", [
@@ -184,7 +170,7 @@ module.exports = (grunt) ->
     "copy:build_app_assets"
     # "copy:tests"
     "jade"
-    "livescript"
+    # "livescript"
     "sass"
     "concat"
     # "copy:chrome_extension"
@@ -201,5 +187,5 @@ module.exports = (grunt) ->
   #   "jade:index"
   #   "wiredep:compile"
   # ]
-  
-  
+
+

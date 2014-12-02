@@ -1,1 +1,38 @@
-@import "content/test.scss";
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  .header {
+    width: 98%;
+    height: 50px;
+    border: 1px solid #000;
+    overflow: hidden;
+  }
+
+  .main-wrapper{
+    width: 98%;
+    height: 570px;
+    border: 1px solid #000;
+    overflow: hidden;
+    .navigation {
+      width: 20%;
+      height: 100%;
+      float: right;
+      border: 1px solid #000;
+    }
+    .content {
+      width: 78%;
+      height: 100%;
+      border: 1px solid #000;
+    }
+  }
+
+  .footer {
+    width: 98%;
+    height: 20px;
+    margin-top: 20px;
+    border: 1px solid #000;
+  }
+}
+@import "header/header.scss";
+@import "navigation/navigation.scss";
+@import "content/content.scss";
+@import "footer/footer.scss";

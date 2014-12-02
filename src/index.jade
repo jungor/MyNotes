@@ -1,1 +1,19 @@
-include content/test.jade
+doctype
+html
+  head
+    meta(charset='utf-8')
+    title MyNotes
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    - var csshref = pkg.name + '-' + pkg.version + '.css'
+    link(rel='stylesheet', href='#{csshref}')
+    script(type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js")
+  body
+    .header
+      include header/header.jade
+    .main-wrapper
+      .navigation
+        include navigation/navigation.jade
+      .content
+        include content/content.jade
+    .footer
+      include footer/footer.jade

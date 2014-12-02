@@ -1,115 +1,128 @@
-body {
-  background-color: gainsboro;
-  font-family: Comic Sans MS;
-  font-weight: 500;
-  font-size: 100%; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Verdana; }
 
-p:first-letter {
-  font-size: 1.5em; }
+.mynotes {
+  float: left;
+  width: 100px;
+  border: 1px solid #000; }
 
-a {
-  TEXT-DECORATION: none;
-  color: blue;
-  font-size: 0.875em; }
-  a:hover {
-    TEXT-DECORATION: underline; }
+.search {
+  float: left;
+  width: 400px;
+  margin-left: 100px;
+  border: 1px solid #000;
+  vertical-align: middle;
+  line-height: 50px; }
+  .search form input {
+    margin-left: 10px;
+    display: inline-block; }
 
-ol {
-  list-style: none;
-  counter-reset: reverse 4; }
-  ol li {
-    font-family: Verdana;
-    font-weight: 300;
-    font-size: 0.875em;
-    counter-increment: reverse -1;
-    position: relative; }
-    ol li:before {
-      content: counter(reverse) '.';
-      display: block;
-      position: absolute;
-      left: -30px;
-      text-align: right;
-      width: 20px; }
-
-dl {
-  padding-left: 1%; }
-
-strong {
-  color: red;
-  font-style: italic; }
-
-.wrapper {
-  background-color: transparent; }
-
-.header {
-  background-color: gainsboro;
-  margin: 1%;
-  padding: 1%;
-  text-align: center; }
-
-.study, .movie, .friend, .mood {
-  background-color: Azure;
-  border-radius: 15px;
-  margin: 1%;
-  padding: 1%; }
+.login-and-sign {
+  float: right;
+  width: 200px;
+  border: 1px solid #000;
+  list-style: none; }
+  .login-and-sign li {
+    display: inline-block; }
 
 body {
-  background-color: gainsboro;
-  font-family: Comic Sans MS;
-  font-weight: 500;
-  font-size: 100%; }
+  font-family: Verdana, Geneva, sans-serif; }
+  body .header {
+    width: 98%;
+    height: 50px;
+    border: 1px solid #000;
+    overflow: hidden; }
+  body .main-wrapper {
+    width: 98%;
+    height: 570px;
+    border: 1px solid #000;
+    overflow: hidden; }
+    body .main-wrapper .navigation {
+      width: 20%;
+      height: 100%;
+      float: right;
+      border: 1px solid #000; }
+    body .main-wrapper .content {
+      width: 78%;
+      height: 100%;
+      border: 1px solid #000; }
+  body .footer {
+    width: 98%;
+    height: 20px;
+    margin-top: 20px;
+    border: 1px solid #000; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Verdana; }
+.mynotes {
+  float: left;
+  width: 100px;
+  border: 1px solid #000; }
 
-p:first-letter {
-  font-size: 1.5em; }
+.search {
+  float: left;
+  width: 400px;
+  margin-left: 100px;
+  border: 1px solid #000;
+  vertical-align: middle;
+  line-height: 50px; }
+  .search form input {
+    margin-left: 10px;
+    display: inline-block; }
 
-a {
-  TEXT-DECORATION: none;
-  color: blue;
-  font-size: 0.875em; }
-  a:hover {
-    TEXT-DECORATION: underline; }
+.login-and-sign {
+  float: right;
+  width: 200px;
+  border: 1px solid #000;
+  list-style: none; }
+  .login-and-sign li {
+    display: inline-block; }
 
-ol {
-  list-style: none;
-  counter-reset: reverse 4; }
-  ol li {
-    font-family: Verdana;
-    font-weight: 300;
-    font-size: 0.875em;
-    counter-increment: reverse -1;
-    position: relative; }
-    ol li:before {
-      content: counter(reverse) '.';
-      display: block;
-      position: absolute;
-      left: -30px;
-      text-align: right;
-      width: 20px; }
+.user {
+  border: 1px solid #000;
+  overflow: hidden; }
+  .user .user-photo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000; }
+  .user .user-info {
+    float: left;
+    margin-left: 3px;
+    border: 1px solid #000; }
+    .user .user-info ul {
+      padding-left: 0;
+      list-style: none; }
 
-dl {
-  padding-left: 1%; }
+.privilege {
+  border: 1px solid #000;
+  margin-top: 5px; }
+  .privilege ul {
+    padding-left: 0;
+    list-style: none; }
+    .privilege ul li button {
+      width: 100%;
+      height: 30px; }
 
-strong {
-  color: red;
-  font-style: italic; }
+.user {
+  border: 1px solid #000;
+  overflow: hidden; }
+  .user .user-photo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000; }
+  .user .user-info {
+    float: left;
+    margin-left: 3px;
+    border: 1px solid #000; }
+    .user .user-info ul {
+      padding-left: 0;
+      list-style: none; }
 
-.wrapper {
-  background-color: transparent; }
-
-.header {
-  background-color: gainsboro;
-  margin: 1%;
-  padding: 1%;
-  text-align: center; }
-
-.study, .movie, .friend, .mood {
-  background-color: Azure;
-  border-radius: 15px;
-  margin: 1%;
-  padding: 1%; }
+.privilege {
+  border: 1px solid #000;
+  margin-top: 5px; }
+  .privilege ul {
+    padding-left: 0;
+    list-style: none; }
+    .privilege ul li button {
+      width: 100%;
+      height: 30px; }

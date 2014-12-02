@@ -1,0 +1,30 @@
+.mynotes {
+    float: left;
+    width: 100px;
+    border: 1px solid #000;
+}
+
+.search {
+  float: left;
+  width: 400px;
+  margin-left: 100px;
+  border: 1px solid #000;
+  vertical-align: middle;
+  line-height: 50px;
+  form {
+    input {
+      margin-left: 10px;
+      display: inline-block;
+    }
+  }
+}
+
+.login-and-sign {
+  float: right;
+  width: 200px;
+  border: 1px solid #000;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
